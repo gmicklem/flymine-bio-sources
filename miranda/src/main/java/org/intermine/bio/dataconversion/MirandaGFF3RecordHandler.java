@@ -57,12 +57,6 @@ public class MirandaGFF3RecordHandler extends GFF3RecordHandler
         String geneName = record.getAttributes().get("Name").iterator().next();
         String targetName = record.getAttributes().get("target").iterator().next();
         feature.setAttribute("pvalue", record.getAttributes().get("pvalue").iterator().next());
-        // GFF3Converter used to set scoreType (the source column of the GFF3 line, here miRanda)
-        // along with the score; InterMine took that out in 2021 (bio/core d49e9d6), so this source
-        // sets it itself
-        if (record.getScore() != null && record.getSource() != null) {
-            feature.setAttribute("scoreType", record.getSource());
-        }
         Item gene = getMiRNAGene(geneName);
         Item target = getTarget(targetName);
         if (gene != null) {

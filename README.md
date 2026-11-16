@@ -41,8 +41,8 @@ These data sources are built with Gradle 8.14 (the wrapper downloads it) against
   database and user for PostgreSQL). The build copies that file into the test resources; it does not go into the jars.
 * **Build and test** all sources, with Checkstyle: `./gradlew build`. A failing test fails the build (`FlybaseAllelesConverterTest`
   and `MirandaConverterTest` used to fail on stale data and the build ignored it, `ignoreFailures`; both pass now: the allele test input is in
-  the 12-column layout of FlyBase's disease model annotations file that the converter reads, and the miRanda handler sets `scoreType`, which
-  InterMine's `GFF3Converter` stopped setting in 2021). One source: `./gradlew :bio-source-rnai:build`.
+  the 12-column layout of FlyBase's disease model annotations file that the converter reads, and `scoreType` of a miRanda target comes from
+  InterMine's `GFF3Converter`, which sets it from the GFF source column again since 6.0.0 (it had stopped in 2021, and the handler set it itself meanwhile)). One source: `./gradlew :bio-source-rnai:build`.
 * **Publish** to the local Maven repository, to build a mine against these sources: `./gradlew publishToMavenLocal`
   (`./gradlew install` is kept as an alias). The artefacts are `org.intermine:bio-source-<name>:4.2.0`, with a sources and a javadoc jar.
   In the mine's `project.xml` a `<source>` with `version="4.2.0"` resolves to them.

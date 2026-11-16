@@ -73,7 +73,9 @@ public class FlybaseAllelesConverter extends BioFileConverter
         while (lineIter.hasNext()) {
             String[] line = (String[]) lineIter.next();
 
-            if (line.length < 10) {
+            // FlyBase's disease model annotations file has 12 columns; the last one this reads
+            // is the evidence in column 11 (index 10)
+            if (line.length < 11) {
                 continue;
             }
 

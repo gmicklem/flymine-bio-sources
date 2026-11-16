@@ -144,9 +144,8 @@ subprojects {
     }
 
     test {
-        // as before the conversion (and as in InterMine's bio/sources): failures are reported, they do not fail the build.
-        // Two tests fail on their own, JDK 8 and 17 alike (stale test data, not the build): see README.md
-        ignoreFailures = true
+        // a failing test fails the build (the two that failed on stale data, FlybaseAllelesConverterTest and MirandaConverterTest,
+        // pass since im-ee7.60, so ignoreFailures is gone)
         forkEvery = 1
     }
 

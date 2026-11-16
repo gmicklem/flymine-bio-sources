@@ -1,4 +1,9 @@
 <items>
+<item id="4_2" class="DOTerm">
+<attribute name="identifier" value="DOID:0050951"/>
+<attribute name="name" value="hereditary ataxia"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
 <item id="5_2" class="DOEvidence">
 <attribute name="evidence" value="inferred from mutant phenotype"/>
 </item>
@@ -15,18 +20,11 @@
 <item id="5_1" class="DOEvidence">
 <attribute name="evidence" value="inferred from mutant phenotype"/>
 </item>
-<item id="4_2" class="DOTerm">
-<attribute name="identifier" value="DOID:0050951"/>
-<collection name="dataSets"><reference ref_id="2_1"/></collection>
-</item>
 <item id="6_3" class="DOAnnotation">
 <attribute name="qualifier" value="model of"/>
 <reference name="ontologyTerm" ref_id="4_1"/>
 <reference name="subject" ref_id="3_3"/>
 <collection name="dataSets"><reference ref_id="2_1"/></collection>
-</item>
-<item id="1_1" class="DataSource">
-<attribute name="name" value="FlyBase"/>
 </item>
 <item id="6_2" class="DOAnnotation">
 <attribute name="qualifier" value="model of"/>
@@ -37,9 +35,8 @@
 <item id="5_4" class="DOEvidence">
 <attribute name="evidence" value="in combination with FLYBASE:HsapATG5[E122D.ScerUAS.T:ZzzzFLAG]; FB:FBal0324974"/>
 </item>
-<item id="4_1" class="DOTerm">
-<attribute name="identifier" value="DOID:0050950"/>
-<collection name="dataSets"><reference ref_id="2_1"/></collection>
+<item id="1_1" class="DataSource">
+<attribute name="name" value="FlyBase"/>
 </item>
 <item id="6_5" class="DOAnnotation">
 <attribute name="qualifier" value="model of"/>
@@ -47,9 +44,18 @@
 <reference name="subject" ref_id="3_4"/>
 <collection name="dataSets"><reference ref_id="2_1"/></collection>
 </item>
+<item id="2_1" class="DataSet">
+<attribute name="name" value="Alleles and phenotypes"/>
+<reference name="dataSource" ref_id="1_1"/>
+</item>
 <item id="7_1" class="SOTerm">
 <attribute name="name" value="allele"/>
 <reference name="ontology" ref_id="0_1"/>
+<collection name="dataSets"><reference ref_id="2_1"/></collection>
+</item>
+<item id="4_1" class="DOTerm">
+<attribute name="identifier" value="DOID:0050950"/>
+<attribute name="name" value="autosomal recessive cerebellar ataxia"/>
 <collection name="dataSets"><reference ref_id="2_1"/></collection>
 </item>
 <item id="6_4" class="DOAnnotation">
@@ -91,9 +97,5 @@
 <reference name="sequenceOntologyTerm" ref_id="7_1"/>
 <collection name="dataSets"><reference ref_id="2_1"/></collection>
 <collection name="doAnnotation"><reference ref_id="6_4"/><reference ref_id="6_5"/></collection>
-</item>
-<item id="2_1" class="DataSet">
-<attribute name="name" value="Alleles and phenotypes"/>
-<reference name="dataSource" ref_id="1_1"/>
 </item>
 </items>

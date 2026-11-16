@@ -1,0 +1,8 @@
+## FlyBase Disease Model Annotations (test data in the layout of the 2020 file, 12 columns; the FBgn and HGNC ids are made up)
+##FBgn_ID	FBgn_symbol	HGNC_ID	DO_qualifier	DO_ID	DO_term	Allele_used_in_model_(FBal_ID)	Allele_used_in_model_(symbol)	Based_on_orthology_with_(HGNC_ID)	Based_on_orthology_with_(symbol)	Evidence/interacting_alleles	Reference_(FBrf_ID)
+
+FBgn0000001	Uba5	HGNC:23230	model of	DOID:0050950	autosomal recessive cerebellar ataxia	FBal0257945	Uba5[HMS01352]	HGNC:23230	UBA5	inferred from mutant phenotype	FBrf0230959
+FBgn0000002	Ufc1	HGNC:26183	model of	DOID:0050950	autosomal recessive cerebellar ataxia	FBal0234993	Ufc1[KK107529]	HGNC:26183	UFC1	inferred from mutant phenotype	FBrf0230959
+FBgn0000003	Ufm1	HGNC:12569	model of	DOID:0050950	autosomal recessive cerebellar ataxia	FBal0266236	Ufm1[GL00536]	HGNC:12569	UFM1	inferred from mutant phenotype	FBrf0230959
+FBgn0000004	Atg5	HGNC:589	model of	DOID:0050951	hereditary ataxia	FBal0324972	Atg5[5cc5]	HGNC:589	ATG5	in combination with FLYBASE:Hsap\ATG5[E122D.Scer\UAS.T:Zzzz\FLAG]; FB:FBal0324974	FBrf0234286
+FBgn0000004	Atg5	HGNC:589	model of	DOID:0050951	hereditary ataxia	FBal0324972	Atg5[5cc5]	HGNC:589	ATG5	is ameliorated by FLYBASE:Hsap\ATG5[Scer\UAS.T:Zzzz\FLAG]; FB:FBal0324973	FBrf0234286
